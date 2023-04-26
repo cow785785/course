@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>選課系統</title>
+    <link rel="stylesheet" href="./home.css" />
+  </head>
+  <body>
+    <div class="top">
+      <section class="logo">
+        <a href="./index.html">
+          <img src="./img/R.png" alt="首頁LOGO" title="網頁LOGO" />
+          <h1>學生管理系統</h1>
+          <a href="#"><h1 class="class" style="color: red">課程管理系統</h1></a>
+        </a>
+      </section>
+      <nav>
+        <ul class="nav justify-content-end nav-pills">
+          <li class="nav-item">
+            <a class="nav-link disabled" aria-current="page" href="#">首頁</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="./add_student.html">新增學生</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="./updele.html">修改/刪除學生</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">選課系統</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <main>
+      <div class="add-Page">
+        <h1>クラスシステム</h1>
+      </div>
+      <div class="class-text-area">
+        <label for="id">Class_ID</label><br />
+        <input
+          type="text"
+          class="class-add-area"
+          id="classareaid"
+          placeholder="クラス番号を入力してください"
+        /><br />
+        <label for="name">Class_Name</label><br />
+        <input
+          type="text"
+          name="class-add-area"
+          id="classarea"
+          class="class-add-area"
+          placeholder="クラスの名前を入力してください"
+        /><br />
+        <label for="name">Class_Day</label><br />
+        <input
+          type="text"
+          name="class-add-area"
+          id="classarea"
+          class="class-add-area"
+          placeholder="じゅぎょうびを入力してください"
+        /><br />
+        <label for="name">Class_Starttime</label><br />
+        <input
+          type="text"
+          name="class-add-area"
+          id="classarea"
+          class="class-add-area"
+          placeholder="クラスの名前を入力してください"
+        /><br />
+        <label for="name">Class_Endtime</label><br />
+        <input
+          type="text"
+          name="class-add-area"
+          id="classarea"
+          class="class-add-area"
+          placeholder="クラスの名前を入力してください"
+        /><br />
+        <label for="name">Class_Credit</label><br />
+        <input
+          type="text"
+          name="class-add-area"
+          id="classarea"
+          class="class-add-area"
+          placeholder="単位取得数を入力してください"
+        />
+      </div>
+      <div class="class-login-area">
+        <div class="class-sing-up">
+          <input type="button" value="新增" id="addbtn" class="calssbtn" />
+          <input type="button" value="修改" id="updatebtn" class="calssbtn" />
+          <input type="button" value="刪除" id="deletebtn" class="calssbtn" />
+        </div>
+      </div>
+    </main>
+    <script src="./course.js"></script>
+  </body>
+</html>

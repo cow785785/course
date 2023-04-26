@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>新增學生</title>
+    <link rel="stylesheet" href="./home.css" />
+  </head>
+  <body>
+    <div class="top">
+      <section class="logo">
+        <a href="./index.html">
+          <img src="./img/R.png" alt="首頁LOGO" title="網頁LOGO" />
+          <h1>學生管理系統</h1>
+          <a href="./course.html"
+            ><h1 class="class" style="color: red">課程管理系統</h1></a
+          >
+        </a>
+      </section>
+      <nav>
+        <ul class="nav justify-content-end nav-pills">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="./index.html">首頁</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">新增學生</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./updele.html">修改/刪除學生</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">選課系統</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <main>
+      <div class="add-Page">
+        <h1>学生追加</h1>
+      </div>
+      <div class="add-text-area">
+        <label for="id">Student_ID</label><br />
+        <input
+          type="text"
+          class="add-area add-stuid"
+          id="stuid"
+          placeholder="学籍番号を入力してください"
+        /><br />
+        <label for="add-password">Student_Name</label><br />
+        <input
+          type="text"
+          name="add-stuname"
+          id="stuname"
+          class="add-area add-password"
+          placeholder="学生の名前を入力してください"
+        />
+      </div>
+      <div class="add-login-area">
+        <div class="sing-up">
+          <input type="button" id="btn" value="新增" class="btn loginbtn" />
+        </div>
+      </div>
+    </main>
+    <script src="./student.js"></script>
+  </body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>首頁</title>
+    <!-- font-awesome icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./home.css" />
+  </head>
+  <body>
+    <div class="top">
+      <section class="logo">
+        <a href="#">
+          <img src="./img/R.png" alt="首頁LOGO" title="網頁LOGO" />
+          <h1>學生管理系統</h1>
+          <a href="./course.html"
+            ><h1 class="class" style="color: red">課程管理系統</h1></a
+          >
+        </a>
+      </section>
+      <nav>
+        <ul class="nav justify-content-end nav-pills">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">首頁</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./add_student.html">新增學生</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./updele.html">修改/刪除學生</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">選課系統</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <main>
+      <div class="Login-Page">
+        <h1>学生登録</h1>
+      </div>
+      <div class="text-area">
+        <label for="email">Student_ID</label><br />
+        <i class="fa-solid fa-envelope"></i
+        ><input
+          type="email"
+          class="area email"
+          id="email"
+          placeholder="デフォルト:1234"
+        /><i class="fa-solid fa-question-circle"></i><br />
+        <label for="password">Student_Name</label><br />
+        <i class="fa-solid fa-lock"></i
+        ><input
+          type="password"
+          name="password"
+          id="password"
+          class="area password"
+          placeholder="デフォルト:1234"
+        /><i class="fa-solid fa-circle-question"></i>
+      </div>
+      <div class="login-area">
+        <!-- <div class="keep-login">
+          <input type="checkbox" />
+          <label for="checkbox">Keep login</label>
+        </div> -->
+        <div class="sing-up">
+          <input type="button" value="登錄" class="btn singup" />
+          <input type="button" value="註冊" class="btn loginbtn" />
+        </div>
+      </div>
+    </main>
+    <script src="./index.js"></script>
+  </body>
+</html>
