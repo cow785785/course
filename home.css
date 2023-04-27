@@ -5,6 +5,7 @@
  * Copyright 2011-2022 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+@import "./stylesheet/pages/studentlogin.css";
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -10963,13 +10964,13 @@ body {
   align-items: center;
 }
 .top .class {
-  margin-left: 200px;
+  margin-left: 120px;
 }
 .top section.logo {
-  border: 2px solid greenyellow;
+  border: 3px solid #fff0f5;
   display: flex;
   align-items: center;
-  flex: 2 1 700px;
+  flex: 2 1 650px;
   flex-wrap: nowrap;
 }
 .top section.logo a {
@@ -10977,8 +10978,9 @@ body {
   align-items: center;
   text-decoration: none;
 }
-.top section.logo h1, .top section.logo .h1 {
-  font-size: 2.5rem;
+.top section.logo h2, .top section.logo .h2 {
+  padding: 0.5rem;
+  margin-left: 65px;
 }
 .top section.logo img {
   width: 6vw;
@@ -10986,7 +10988,16 @@ body {
 }
 
 nav {
-  flex: 2 1 280px;
+  flex: 2 1 380px;
+}
+
+.carousel-inner {
+  width: 98.7vw;
+  height: 38.72vw;
+}
+.carousel-inner img {
+  width: 80vw;
+  height: 50vw;
 }
 
 main {
@@ -11098,6 +11109,10 @@ main .add-login-area {
   cursor: pointer;
 }
 
+.top .select {
+  margin-left: 90px;
+}
+
 input.class-add-area {
   width: 230px;
 }
@@ -11108,5 +11123,18 @@ input.class-add-area {
   margin-top: 1rem;
 }
 .class-sing-up .calssbtn {
+  width: 48px;
+}
+
+main .select-area {
+  width: 230px;
+}
+
+.select-sing-up {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+.select-sing-up .calssbtn {
   width: 48px;
 }/*# sourceMappingURL=home.css.map */

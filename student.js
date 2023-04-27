@@ -5,9 +5,6 @@ const addupdatename = document.querySelector("#addupdatename");
 //新增學生資料
 const addbtn = document.querySelector("#addbtn");
 addbtn.addEventListener("click", function () {
-  const addupdateid = document.querySelector("#addupdateid");
-  const addupdatename = document.querySelector("#addupdatename");
-
   let body = {
     id: `${addupdateid.value}`,
     studentname: `${addupdatename.value}`,
@@ -31,7 +28,9 @@ addbtn.addEventListener("click", function () {
           "學生資料\n學生 ID :" +
           data.id +
           "\n學生姓名：" +
-          data.studentname
+          data.studentname +
+          "\n訊息 : " +
+          data.message
       );
       window.location.href = "./updele.html";
       console.log(data);
@@ -68,7 +67,9 @@ updatebtn.addEventListener("click", function () {
           "學生資料\n學生 ID :" +
           data.id +
           "\n學生姓名：" +
-          data.studentname
+          data.studentname +
+          "\n訊息 : " +
+          data.message
       );
       window.location.href = "./updele.html";
       console.log(data);
@@ -104,7 +105,9 @@ deletebtn.addEventListener("click", function () {
           "學生資料\n學生 ID :" +
           data.id +
           "\n學生姓名：" +
-          data.studentname
+          data.studentname +
+          "\n訊息 : " +
+          data.message
       );
       window.location.href = "./updele.html";
     })

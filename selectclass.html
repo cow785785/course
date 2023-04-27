@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>選課システム</title>
+    <link rel="stylesheet" href="./home.css" />
+  </head>
+  <body>
+    <div class="top">
+      <section class="logo">
+        <a href="./index.html">
+          <img src="./img/R.png" alt="首頁LOGO" title="網頁LOGO" />
+          <h3>学生管理システム</h3>
+        </a>
+        <a href="./course.html"
+          ><h3 class="class" style="color: red">クラス管理システム</h3></a
+        >
+
+        <a href="#"
+          ><h3 class="select" style="border: 3px solid #f4a460; color: #40e0d0">
+            選課システム
+          </h3></a
+        >
+      </section>
+      <nav>
+        <ul class="nav justify-content-end nav-pills">
+          <li class="nav-item">
+            <a class="nav-link disabled" aria-current="page" href="./index.html"
+              >ホーム</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="./login.html">学生登録</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="./updele.html"
+              >増加/更新/削除学生</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">クラスシステム</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <main>
+      <div class="select-page">
+        <h1>選課システム</h1>
+      </div>
+      <div class="select-text-area">
+        <label for="id">Student_ID</label><br />
+        <input
+          type="text"
+          class="select-area"
+          id="selectstudentid"
+          placeholder="学籍番号を入力してください"
+        /><br />
+        <label for="studentname">Class_ID</label><br />
+        <input
+          type="text"
+          class="select-area"
+          id="selectclassid"
+          placeholder="クラス番号を入力してください"
+        /><br />
+        <label for="studentname">Class_Name</label><br />
+        <input
+          type="text"
+          class="select-area"
+          id="selectclassname"
+          placeholder="クラス名前を入力してください"
+        />
+      </div>
+      <div class="class-login-area">
+        <div class="select-sing-up">
+          <input type="button" value="選択" id="addbtn" class="calssbtn" />
+          <input type="button" value="検索" id="searchbtn" class="calssbtn" />
+          <input type="button" value="削除" id="deletebtn" class="calssbtn" />
+        </div>
+      </div>
+    </main>
+    <script src="./select.js"></script>
+  </body>
+</html>
