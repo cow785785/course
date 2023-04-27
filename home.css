@@ -11079,12 +11079,20 @@ main .add-login-area {
 }
 
 .upde-login-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 1rem;
 }
-.upde-login-area .updeb-btn {
-  width: 110px;
+.upde-login-area .sing-up {
+  width: 25vw;
 }
-.upde-login-area .updeb-btn:hover {
+.upde-login-area .addupde-btn {
+  width: 85px;
+  height: 35px;
+  text-align: center;
+}
+.upde-login-area .addupde-btn:hover {
   background-color: crimson;
   box-shadow: 3px 3px 3px 3px white;
   cursor: pointer;

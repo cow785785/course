@@ -1,16 +1,27 @@
 //抓取所有input的節點
-const classarea = document.querySelectorAll('input[type="text"]');
+const classareaid = document.querySelector("#classareaid");
+const classareaname = document.querySelector("#classareaname");
+const classareaday = document.querySelector("#classareaday");
+const classareastart = document.querySelector("#classareastart");
+const classareaend = document.querySelector("#classareaend");
+const classareacredit = document.querySelector("#classareacredit");
+const classarea = document.querySelectorAll('input[type="class-add-area"]');
 //新增課程按鈕節點
 const addbtn = document.querySelector("#addbtn");
 addbtn.addEventListener("click", function () {
-  let body = {};
+  let body = {
+    classid: `${classareaid.value}`,
 
-  // 迴圈獲取每個 input 元素節點的值
-  for (let i = 0; i < classarea.length; i++) {
-    const input = classarea[i];
+    classname: `${classareaname.value}`,
 
-    body[input.id] = input.value;
-  }
+    dayOfWeek: `${classareaday.value}`,
+
+    startTime: `${classareastart.value}`,
+
+    endTime: `${classareaend.value}`,
+
+    credit: `${classareacredit.value}`,
+  };
   fetch("http://localhost:8080/addClass", {
     method: "POST",
     headers: {
@@ -25,9 +36,10 @@ addbtn.addEventListener("click", function () {
       throw new Error("失敗。");
     })
     .then(function (data) {
+      console.log(data);
       alert(
         "課程新增成功！\n" +
-          "課程資料\n學生 ID :" +
+          "課程資料\n課程 ID :" +
           data.classid +
           "\n課程名稱：" +
           data.classname +
@@ -40,8 +52,8 @@ addbtn.addEventListener("click", function () {
           "\n課程學分 :" +
           data.credit
       );
-      window.location.href = "./course.html";
-      classarea.value = "";
+      // window.location.href = "./course.html";
+      // classarea.value = "";
     })
     .catch(function (error) {
       console.log("新增課程失敗錯誤訊息" + error);
