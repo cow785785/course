@@ -54,21 +54,20 @@
         <h1>学生登録</h1>
       </div>
       <div class="text-area">
-        <label for="email">Student_ID</label><br />
+        <label for="Student_ID">Student_ID</label><br />
         <i class="fa-solid fa-envelope"></i
         ><input
-          type="email"
-          class="area email"
-          id="email"
+          type="text"
+          class="area studentid"
+          id="Student_ID"
           placeholder="デフォルト:1234"
         /><i class="fa-solid fa-question-circle"></i><br />
-        <label for="password">Student_Name</label><br />
+        <label for="Student_Name">Student_Name</label><br />
         <i class="fa-solid fa-lock"></i
         ><input
-          type="password"
-          name="password"
-          id="password"
-          class="area password"
+          type="text"
+          id="Student_Name"
+          class="area studentname"
           placeholder="デフォルト:1234"
         /><i class="fa-solid fa-circle-question"></i>
       </div>
@@ -78,8 +77,8 @@
           <label for="checkbox">Keep login</label>
         </div> -->
         <div class="sing-up">
-          <input type="button" value="登錄" class="btn singup" />
-          <input type="button" value="註冊" class="btn loginbtn" />
+          <input type="button" value="登錄" id="loginbtn" class="btn singup" />
+          <input type="button" value="註冊" id="singbtn" class="btn loginbtn" />
         </div>
       </div>
     </main>
