@@ -18,8 +18,10 @@ fetch("http://localhost:8080/getAllStudent", {
 const studentID = document.querySelector("#Student_ID");
 const studentName = document.querySelector("#Student_Name");
 loginbtn.addEventListener("click", function () {
-  console.log(studentID.value);
-  console.log(studentName.value);
+  if (studentID.value == 1234 && studentName.value == 1234) {
+    alert("預設登錄!跳轉註冊頁面");
+    window.location.href = "./updele.html";
+  }
   // 在所有學生中尋找該學生
   const student = allStudents.find(function (i) {
     return (

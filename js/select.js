@@ -113,6 +113,8 @@ searchbtn.addEventListener("click", function () {
       let abc = "";
       data.forEach((element) => {
         abc +=
+          "目前有的資料 " +
+          " " +
           element.studentid +
           " " +
           element.classid +
